@@ -1,0 +1,6 @@
+name: pokeapi-crawl
+tasks:
+  start:
+    command: 'BASE_URL=http://localhost:30333 node scraper.js'
+    baseUrl: 'https://pokeapi.co/'
+    proxy: 'http://localhost:30333'

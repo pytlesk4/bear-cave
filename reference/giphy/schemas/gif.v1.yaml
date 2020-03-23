@@ -9,7 +9,7 @@ properties:
     type: string
   create_datetime:
     description: The date this GIF was added to the GIPHY database.
-    example: '2013-08-01 12:41:48'
+    example: '2013-08-01T12:41:48'
     format: date-time
     type: string
   embded_url:
