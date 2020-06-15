@@ -89,14 +89,13 @@ parameters:
     type: string
 responses:
   BadRequest:
-    description: Your request was formatted incorrectly or missing required parameters.
+    $ref: './responses/bad-request.yaml'
   Forbidden:
-    description: "You weren't authorized to make your request; most likely this indicates an issue with your API Key."
+    $ref: './responses/forbidden.yaml'
   NotFound:
-    description: 'The particular GIF you are requesting was not found. This occurs, for example, if you request a GIF by an id that does not exist.'
+    $ref: './responses/not-found.yaml'
   TooManyRequests:
-    description: |
-      Your API Key is making too many requests. Read about [requesting a Production Key](https://developers.giphy.com/docs/#access) to upgrade your API Key rate limits.
+    $ref: './responses/too-many-requests.yaml'
 tags:
   - name: gifs
   - name: stickers
