@@ -2,4 +2,4 @@ title: Example
 type: object
 properties:
   foo:
-    $ref: ../../foo.v1.yaml
+    type: string
