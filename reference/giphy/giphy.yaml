@@ -102,7 +102,7 @@ tags:
 paths:
   /gifs:
     get:
-      $ref: ./pathItems/gifs.yaml
+      $ref: './pathItems/gifs.yaml'
   /gifs/random:
     get:
       description: |
