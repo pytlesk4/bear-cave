@@ -102,36 +102,7 @@ tags:
 paths:
   /gifs:
     get:
-      description: |
-        A multiget version of the get GIF by ID endpoint.
-      operationId: getGifsById
-      parameters:
-        - $ref: '#/parameters/gifIds'
-      responses:
-        '200':
-          description: ''
-          schema:
-            properties:
-              data:
-                items:
-                  $ref: '#/definitions/Gif'
-                type: array
-              meta:
-                $ref: '#/definitions/Meta'
-              pagination:
-                $ref: '#/definitions/Pagination'
-            type: object
-        '400':
-          $ref: '#/responses/BadRequest'
-        '403':
-          $ref: '#/responses/Forbidden'
-        '404':
-          $ref: '#/responses/NotFound'
-        '429':
-          $ref: '#/responses/TooManyRequests'
-      summary: Get GIFs by ID
-      tags:
-        - gifs
+      $ref: ./pathItems/gifs.yaml#/~1gifs/get
   /gifs/random:
     get:
       description: |
