@@ -1,30 +1,31 @@
-description: |
-  A multiget version of the get GIF by ID endpoint.
-operationId: getGifsById
-parameters:
-  - $ref: '../giphy.yaml#/parameters/gifIds'
-responses:
-  '200':
-    description: ''
-    schema:
-      properties:
-        data:
-          items:
-            $ref: '../giphy.yaml#/definitions/Gif'
-          type: array
-        meta:
-          $ref: '../giphy.yaml#/definitions/Meta'
-        pagination:
-          $ref: '../giphy.yaml#/definitions/Pagination'
-      type: object
-  '400':
-    $ref: '../giphy.yaml#/responses/BadRequest'
-  '403':
-    $ref: '../giphy.yaml#/responses/Forbidden'
-  '404':
-    $ref: '../giphy.yaml#/responses/NotFound'
-  '429':
-    $ref: '../giphy.yaml#/responses/TooManyRequests'
-summary: Get GIFs by ID
-tags:
-  - gifs
+/gifs:
+  description: |
+    A multiget version of the get GIF by ID endpoint.
+  operationId: getGifsById
+  parameters:
+    - $ref: '../giphy.yaml#/parameters/gifIds'
+  responses:
+    '200':
+      description: ''
+      schema:
+        properties:
+          data:
+            items:
+              $ref: '../giphy.yaml#/definitions/Gif'
+            type: array
+          meta:
+            $ref: '../giphy.yaml#/definitions/Meta'
+          pagination:
+            $ref: '../giphy.yaml#/definitions/Pagination'
+        type: object
+    '400':
+      $ref: '../giphy.yaml#/responses/BadRequest'
+    '403':
+      $ref: '../giphy.yaml#/responses/Forbidden'
+    '404':
+      $ref: '../giphy.yaml#/responses/NotFound'
+    '429':
+      $ref: '../giphy.yaml#/responses/TooManyRequests'
+  summary: Get GIFs by ID
+  tags:
+    - gifs
