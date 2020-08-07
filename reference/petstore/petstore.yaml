@@ -1,9 +1,10 @@
-swagger: "2.0"
+swagger: '2.0'
 info:
   version: 1.0.0
   title: Swagger Petstore
   license:
     name: MIT
+  description: ''
 host: petstore.swagger.io
 basePath: /v1
 schemes:
@@ -27,7 +28,7 @@ paths:
           type: integer
           format: int32
       responses:
-        "200":
+        '200':
           description: A paged array of pets
           headers:
             x-next:
@@ -45,13 +46,13 @@ paths:
       tags:
         - pets
       responses:
-        "201":
+        '201':
           description: Null response
         default:
           description: unexpected error
           schema:
             $ref: '#/definitions/Error'
-  /pets/{petId}:
+  '/pets/{petId}':
     get:
       summary: Info for a specific pet
       operationId: showPetById
@@ -64,7 +65,7 @@ paths:
           description: The id of the pet to retrieve
           type: string
       responses:
-        "200":
+        '200':
           description: Expected response to a valid request
           schema:
             $ref: '#/definitions/Pets'
@@ -74,7 +75,7 @@ paths:
             $ref: '#/definitions/Error'
 definitions:
   Pet:
-    type: "object"
+    type: object
     required:
       - id
       - name
@@ -91,7 +92,7 @@ definitions:
     items:
       $ref: '#/definitions/Pet'
   Error:
-    type: "object"
+    type: object
     required:
       - code
       - message
