@@ -2,7 +2,7 @@ type: object
 x-examples: {}
 properties:
   bitly_url:
-    description: The unique bit.ly URL for this GIF test again let's dance
+    description: The unique bit.ly URL for this GIF test again let's dance again
     example: 'http://gph.is/1gsWDcL'
     type: string
   content_url:
