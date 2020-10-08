@@ -1,0 +1,9 @@
+title: v1api.example.v1
+type: object
+properties:
+  srn1:
+    $ref: 'http://localhost:8081/api/nodes.raw?srn=gh/stoplightio/studio-demo/reference/common/models/error.v1.yaml'
+  srn2:
+    $ref: 'http://localhost:8081/api/nodes.raw/gh/stoplightio/studio-demo/reference/common/models/error.v1.yaml'
+  srn3:
+    $ref: 'http://localhost:8081/api/nodes.raw/?srn=gh/stoplightio/studio-demo/reference/common/models/error.v1.yaml&mid=2&deref=bundle'
