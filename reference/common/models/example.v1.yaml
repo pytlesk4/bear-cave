@@ -4,3 +4,7 @@ description: ''
 properties:
   foo:
     type: string
+  bears:
+    type: string
+  '':
+    type: string
