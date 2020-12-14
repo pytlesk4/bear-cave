@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: example-knowledgebase
+  version: 2.0.0
+  description: API Documentation
+  contact:
+    name: example Support
+    email: support@example.com
+    url: 'https://www.example.com/about-example/contact-us/'
+tags:
+  - name: knowledge-base
+servers:
+  - url: 'https://api.example.com'
+    description: Partner - All Others
+  - url: 'https://{subdomain}.api.example.com'
+    description: Partner or Client custom branded sub-domain
+    variables:
+      subdomain:
+        default: demo
+        description: Custom sub-domain assigned to the client
+paths:
+  '/api/v2/tenants/{tenantId}/kb/{articleId}/activitylog': 
+      $ref: ./endpoints/activityLog.yaml
