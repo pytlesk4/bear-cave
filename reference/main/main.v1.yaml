@@ -20,4 +20,5 @@ servers:
         description: Custom sub-domain assigned to the client
 paths:
   '/api/v2/tenants/{tenantId}/kb/{articleId}/activitylog':
-    $ref: ./endpoints/activityLog.yaml#/get
+    get: 
+      $ref: ./endpoints/activityLog.yaml#/get
