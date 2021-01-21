@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: Foo
+  version: 2.0.0
+  description: Foo Documentation
+  contact:
+    name: Foo Support
+    email: foo@example.com
+    url: 'https://www.example.com/about-example/contact-us/'
+servers:
+  - url: 'https://api.foo.com'
+    description: foo
+paths:
+  '/api/v2/foos/{fooId}':
+    post:
+      summary: Updates a foo in the store with form data
+      operationId: updateFooWithForm
+      parameters:
+        - name: fooId
+          in: path
+          description: ID of foo that needs to be updated
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: ./foo.yaml
+      responses:
+        '200':
+          description: foo updated.
+          content: 
+            'application/json': {}
+            'application/xml': {}
