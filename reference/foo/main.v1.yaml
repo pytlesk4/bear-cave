@@ -23,7 +23,7 @@ paths:
           schema:
             type: string
       requestBody:
-        $ref: ./foo.yaml
+        $ref: ./foo.post.yaml
       responses:
         '200':
           description: foo updated.
@@ -41,7 +41,7 @@ paths:
           schema:
             type: string
       requestBody:
-        $ref: ./foo.yaml
+        $ref: ./foo.put.yaml
       responses:
         '200':
           description: foo updated.

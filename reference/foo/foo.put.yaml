@@ -1,0 +1,12 @@
+content:
+  'application/x-www-form-urlencoded':
+    schema:
+      properties:
+          name: 
+            description: Updated name of the foo
+            type: string
+          status:
+            description: Updated status of the foo
+            type: string
+      required:
+        - status
