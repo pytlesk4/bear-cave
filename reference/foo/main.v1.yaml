@@ -30,3 +30,21 @@ paths:
           content: 
             'application/json': {}
             'application/xml': {}
+    put:
+      summary: Updates a foo in the store with form data
+      operationId: updateFooWithFormPut
+      parameters:
+        - name: fooId
+          in: path
+          description: ID of foo that needs to be updated
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: ./foo.yaml
+      responses:
+        '200':
+          description: foo updated.
+          content: 
+            'application/json': {}
+            'application/xml': {}
