@@ -27,9 +27,14 @@ paths:
       responses:
         '200':
           description: foo updated.
-          content: 
-            'application/json': {}
-            'application/xml': {}
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  foo:
+                    type: string
+            application/xml: {}
     put:
       summary: Updates a foo in the store with form data
       operationId: updateFooWithFormPut
@@ -45,6 +50,11 @@ paths:
       responses:
         '200':
           description: foo updated.
-          content: 
-            'application/json': {}
-            'application/xml': {}
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  foo:
+                    type: string
+            application/xml: {}
