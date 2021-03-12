@@ -1,0 +1,9 @@
+{
+  "title": "circular-3",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  }
+}
