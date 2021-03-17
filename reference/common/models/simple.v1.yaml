@@ -1,0 +1,7 @@
+title: simple
+type: object
+properties:
+  id:
+    type: string
+  masked_property:
+    type: string
