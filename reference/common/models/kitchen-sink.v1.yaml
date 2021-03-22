@@ -7,7 +7,7 @@ properties:
   simple_file_ref:
     $ref: ./simple.v1.yaml
   simple_file_as_http_ref_masked:
-    $ref: 'http://stoplight-local.com:8080/api/v1/projects/bear/bear-cave/nodes/reference/common/models/simple.v1.yaml'
+    $ref: 'http://stoplight-local.com:8080/api/v1/projects/bear/bear-cave/nodes/reference/common/models/simple.v1.yaml?deref=bundle&mid=1'
   ref_to_self_as_file:
     $ref: ./kitchen-sink.v1.yaml
   ref_to_self_as_http:
