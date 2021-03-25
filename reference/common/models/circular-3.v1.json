@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "$ref": "http://stoplight-local.com:8080/api/v1/projects/bear/bear-cave/nodes/reference/common/models/circular-1.v1.yaml"
+      "$ref": "https://dojo-stg2-v2.stoplight-dev.com/api/v1/projects/bear/bear-cave/nodes/reference/common/models/circular-1.v1.yaml"
     }
   }
 }
