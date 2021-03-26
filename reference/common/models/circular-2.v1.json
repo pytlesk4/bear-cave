@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "$ref": "https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/circular-3.v1.json?deref=bundle&mid=9"
+      "$ref": "https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/circular-3.v1.json"
     }
   }
 }
