@@ -1,0 +1,5 @@
+title: baz2
+type: object
+properties:
+  id:
+    type: string

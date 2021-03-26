@@ -1,0 +1,11 @@
+title: wooo
+type: object
+properties:
+  id:
+    type: string
+  test:
+    $ref: '#/properties/foo/properties/baz'
+  foo:
+    properties:
+      baz:
+        type: number
