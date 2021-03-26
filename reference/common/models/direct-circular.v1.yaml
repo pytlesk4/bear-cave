@@ -2,4 +2,4 @@ title: direct-circular
 type: object
 properties:
   id:
-    $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/direct-circular.v1.yaml'
+    $ref: 'https://stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/direct-circular.v1.yaml'

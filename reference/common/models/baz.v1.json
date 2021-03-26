@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "idd": {
-      "$ref": "http://stoplight-local.com:8080/api/v1/projects/bear/bear-cave/nodes/reference/common/models/bar.v1.json?mid=2"
+      "$ref": "https://stoplight.io/api/v1/projects/bear/bear-cave/nodes/reference/common/models/bar.v1.json"
     }
   }
 }

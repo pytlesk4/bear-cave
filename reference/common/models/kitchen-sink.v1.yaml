@@ -7,18 +7,18 @@ properties:
   simple_file_ref:
     $ref: ./simple.v1.yaml
   simple_file_as_http_ref_masked:
-    $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/simple.v1.yaml'
+    $ref: 'https://stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/simple.v1.yaml'
   ref_to_self_as_file:
     $ref: ./kitchen-sink.v1.yaml
   ref_to_self_as_http:
-    $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/kitchen-sink.v1.yaml'
+    $ref: 'https://stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/kitchen-sink.v1.yaml'
   ref_to_self_as_http_optomized_bundle:
-    $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/kitchen-sink.v1.yaml?deref=optimizedBundle'
+    $ref: 'https://stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/kitchen-sink.v1.yaml?deref=optimizedBundle'
   ref_to_self_as_http_with_mask_all_props:
-    $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/kitchen-sink.v1.yaml'
+    $ref: 'https://stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/kitchen-sink.v1.yaml'
   indirect_circular_ref_file:
     $ref: ./indirect-circular.v1.yaml
   indirect_circular_ref_http:
-    $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/indirect-circular.v1.yaml'
+    $ref: 'https://stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/indirect-circular.v1.yaml'
   indirect_circular_ref_http_optomized_bundled:
-    $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/indirect-circular.v1.yaml?deref=optimizedBundle'
+    $ref: 'https://stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/indirect-circular.v1.yaml?deref=optimizedBundle'

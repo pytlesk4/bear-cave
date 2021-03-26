@@ -6,4 +6,4 @@ properties:
   circle:
     $ref: ./v1api.example.v1.yaml
   circle2:
-    $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/v1api.example.v1.yaml'
+    $ref: 'https://stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/v1api.example.v1.yaml'
