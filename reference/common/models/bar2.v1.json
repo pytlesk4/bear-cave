@@ -1,0 +1,23 @@
+{
+  "title": "bar 2 json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "test": {
+      "$ref": "#/properties/bar/properties/baz"
+    },
+    "bar": {
+      "$ref": "#/properties/foo"
+    },
+    "foo": {
+      "type": "object",
+      "properties": {
+        "baz": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

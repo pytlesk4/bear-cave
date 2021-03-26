@@ -1,4 +1,4 @@
-title: wooo
+title: bar 2 yaml
 type: object
 properties:
   id:
@@ -8,6 +8,7 @@ properties:
   bar: 
     $ref: "#/properties/foo"
   foo:
+    type: object
     properties:
       baz:
         type: number
