@@ -89,20 +89,20 @@ parameters:
     type: string
 responses:
   BadRequest:
-    $ref: './responses/bad-request.yaml'
+    $ref: ./responses/bad-request.yaml
   Forbidden:
-    $ref: './responses/forbidden.yaml'
+    $ref: ./responses/forbidden.yaml
   NotFound:
-    $ref: './responses/not-found.yaml'
+    $ref: ./responses/not-found.yaml
   TooManyRequests:
-    $ref: './responses/too-many-requests.yaml'
+    $ref: ./responses/too-many-requests.yaml
 tags:
   - name: gifs
   - name: stickers
 paths:
   /gifs:
     get:
-      $ref: './pathItems/gifs.yaml#/~1gifs'
+      $ref: ./pathItems/gifs.yaml#/~1gifs
   /gifs/random:
     get:
       description: |
@@ -115,12 +115,14 @@ paths:
         '200':
           description: ''
           schema:
+            type: object
             properties:
               data:
                 $ref: '#/definitions/Gif'
               meta:
                 $ref: '#/definitions/Meta'
-            type: object
+              kitchen-sink:
+                $ref: 'https://dojo-stg-v2.stoplight.io/api/v1/projects/bear-bros-inc/bear-cave/nodes/reference/common/models/kitchen-sink.v1.yaml?mid=13'
         '400':
           $ref: '#/responses/BadRequest'
         '403':
@@ -387,12 +389,12 @@ paths:
         - stickers
 definitions:
   Gif:
-    $ref: './schemas/gif.v1.yaml'
+    $ref: ./schemas/gif.v1.yaml
   Image:
-    $ref: './schemas/image.v1.yaml'
+    $ref: ./schemas/image.v1.yaml
   Meta:
-    $ref: './schemas/meta.v1.yaml'
+    $ref: ./schemas/meta.v1.yaml
   Pagination:
-    $ref: './schemas/pagination.v1.yaml'
+    $ref: ./schemas/pagination.v1.yaml
   User:
-    $ref: './schemas/user.v1.yaml'
+    $ref: ./schemas/user.v1.yaml

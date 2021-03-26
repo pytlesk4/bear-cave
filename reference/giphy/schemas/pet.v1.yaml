@@ -4,4 +4,4 @@ properties:
   id:
     type: string
   pet:
-    $ref: 'http://bear.stoplight-local.com:8080/api/v1/projects/bear/studio-demo/nodes/reference/petstore/openapi.v1.yaml/components/schemas/Pets?deref=bundle'
+    $ref: 'https://dojo-stg2-v2.stoplight-dev.com/api/v1/projects/bear/studio-demo/nodes/reference/petstore/openapi.v1.yaml/components/schemas/Pets?deref=bundle'
