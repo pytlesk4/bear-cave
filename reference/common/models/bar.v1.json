@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": "number"
     },
     "test": {
       "$ref": "#/properties/foo/properties/baz"
