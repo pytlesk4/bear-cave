@@ -3,4 +3,4 @@ type: object
 description: ''
 properties:
   id:
-    $ref: 'https://stoplight.io/api/v1/projects/bear/bear-cave/nodes/reference/common/models/bar2.v1.yaml'
+    $ref: 'https://stoplight.io/api/v1/projects/bear/bear-cave/nodes/reference/common/models/bar2.v1.yaml?deref=bundle&mid=2089'
