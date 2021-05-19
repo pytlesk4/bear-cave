@@ -15,6 +15,9 @@
           "type": "number"
         }
       }
+    },
+    "cors": {
+      "type": "string"
     }
   }
 }
